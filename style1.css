@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: Lato;
+    src: url("assets/fonts/Lato-Bold.ttf");
+}
+
+
+body{
+    margin: 0;
+    padding:0;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+main{
+    box-shadow: 0 0 1px 0 darkgrey;
+    background-color: whitesmoke;
+    z-index: 1;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    
+    width: 100%;
+    background-image: url("assets/img/studentsbg.png");
+    background-size: cover;
+    margin-top:0;
+
+}
+header > div{
+    
+    width: 70%;
+    background-color: #c5192d;
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Lato, sans-serif;
+    color: white;
+    
+    
+    
+}
+
+#intro-container > p{
+    background-color: #c5192d;
+    background-size: 50%;
+}
+
+li{
+    list-style-type: none;
+    margin: 1rem;
+}
+
+li::nth-child(2)::before{
+    content: "\1F64C";
+}
+
+li::nth-child(3)::before{
+    content: "\1F3EB";
+}
+
+li::nth-child(4)::before{
+    content:"\1F4DA";
+}
+
+/*
+@media only screen and (max width: 600px){
+    .body{
+        background: linear-gradient(135deg,#f5f7fa 0%, #c3cfe2 100%);
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+
+    }
+    .main{
+
+    }
+    .h1{
+        font-family: Montserrat, sans-serif;
+        font-size: 4rem;
+    }
+    .h2{
+        font-family: Montserrat, sans-serif;
+        font-size: 2.2rem;
+    }
+}
+
+@media(min-width: 960px){
+    html{
+        font-size:24px;
+    }
+}
