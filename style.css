@@ -7,15 +7,19 @@
     src: url("assets/fonts/Lato-Bold.ttf");
 }
 
+a { 
+    color: inherit;
+} 
+
 * {
     box-sizing: border-box;
 }
-/*
+
 html{
     font-family: Lato, sans-serif;
     font-size: 14px;
 }
-*/
+
 h1{
     margin:0;
     padding: 2rem;
@@ -39,13 +43,15 @@ h2{
 }
 
 p{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 70ch;
     line-height: 1.5;
 }
 
 body{
     margin:0;
+    min-height: 100%;
     height: 100%;
     width: 100%;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -57,12 +63,12 @@ body{
 
 header{
     width:100%;
+    height: 55vh;
     background-image: url("assets/img/studentsbg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color:white;
-    height: 65vh;
     text-align: center;
     position: relative;
     margin-bottom: 6rem;
@@ -70,46 +76,52 @@ header{
 
 header > *{
     background-color: #c5192d;
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    
-    
+    padding:2rem;
     position: absolute;
-    
     bottom: -4rem;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    text-align: center;
+    width: 95vw;
 }
 
-/*
-    box-shadow: 0 0 1px 0 darkgrey;
-    background-color: whitesmoke;
-*/
+
 main{
     background-color: whitesmoke;
-    width: 70%;
+    box-shadow: 0 0 0 1px darkgrey;
+    width: 95vw;
     margin: auto;
     font-size: 1.2rem;
     z-index: 1;
+
 }
 
 article{
-    column-count: 2;
+    column-count: 1;
     column-width: 45%;
     column-gap: 10%;
     
     padding:2rem;
 }
 
+
+
+article:nth-child(3) > div{
+    order:1;
+}
+article:nth-child(3) > img{
+    order:2;
+}
+article:nth-child(2){
+    border-bottom:.1px solid grey;
+}
+
 #intro-container{
-
+   
     background-color: #c5192d;
-
+    
 }
 
 ul{
@@ -140,10 +152,19 @@ li:nth-child(3){
 }
 
 footer{
-    margin: auto;
+    position: relative;
+    padding: 2rem;
+    margin-top: 2rem;
     text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
     background-color: #c5192d;
+    color:white;
 }
+
 
 @media(min-width: 600px){
 
@@ -172,11 +193,21 @@ footer{
 
     #intro-container{
         background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+        
     }
+
+    article{
+        column-count: 2;
+        column-width: 45%;
+        column-gap: 10%;
+        
+        padding:2rem;
+    }
+
 }
 
 @media(min-width: 960px){
-    html{
+    body{
         font-size: 24px;
     }
 
@@ -186,5 +217,13 @@ footer{
 
     header > div, main, footer{
         width: 70%
+    }
+
+    article{
+        column-count: 2;
+        column-width: 45%;
+        column-gap: 10%;
+        
+        padding:2rem;
     }
 }
