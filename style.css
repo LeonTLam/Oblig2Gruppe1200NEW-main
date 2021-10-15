@@ -160,7 +160,7 @@ footer{
 }
 
 /* Screes  600px – 960 px*/
-@media(min-width: 600px){
+@media(min-width: 601px){
     
     html{
         font-size: 16px;
@@ -201,7 +201,7 @@ footer{
 }
 
 /* Screens > 960px */
-@media(min-width: 959px){
+@media(min-width: 961px){
     html{
         font-size: 24px;
     }
