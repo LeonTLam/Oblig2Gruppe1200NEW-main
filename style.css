@@ -98,7 +98,6 @@ main{
 
 article{
     column-count: 1;
-    column-width: 45%;
     column-gap: 10%;
     padding:2rem;
 }
@@ -193,7 +192,7 @@ footer{
 
     article{
         column-count: 2;
-        column-width: 45%;
+        
         column-gap: 10%;
         
         padding:2rem;
@@ -217,7 +216,7 @@ footer{
 
     article{
         column-count: 2;
-        column-width: 45%;
+        
         column-gap: 10%;
         padding:2rem;
         display: inline-block;
